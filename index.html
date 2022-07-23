@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu Desing- Açılır Menü Çalışması</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--BoostrapCDN üzerinden link aldım-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="mobile-menu"/>
+        <label for="mobile-menu" class="mobile-bttn">
+           <span>MENU<i class="fas fa-bars"></i></span>
+       </label>       
+        <div class="container-menu">
+           
+            
+            <ul>
+                        <!--Boostrap kütüphanesinden 4.7.0 sürümden iconları çektim "tüm menülere uyguladım" -->
+
+                        <li class="first-menu"><i class="fa fa-home" aria-hidden="true"></i>Home</a> </li>
+
+                        <!--About Us menüsüne 3 adet alt menü (sub menu) ekledim-->
+                        <li><a href="#" ><i class="fa fa-user" aria-hidden="true"> </i> About Us</a>
+                                            <div class="sub-menu-1">
+                                                <ul>
+                                                <li> <a href="#">Mission</a> </li>   
+                                                <li> <a href="#">Vision</a> </li> 
+                                                <li> <a href="#">Team</a> </li>                      
+                                                </ul>
+                                            </div>
+                        </li>
+                         <!--Services Us menüsü içinde "digital marketing" menüsüne 3 adet alt menü (sub menu) ekledim-->
+                        <li><a href="#"><i class="fa fa-clone" aria-hidden="true"> </i> Services</a>
+                                                                            <div class="sub-menu-1">
+                                                                                    <ul>
+                                                                                        <li> <a href="#">Web Designing</a> </li> 
+                                                                                        <li class="hover-me"> <a href="#">Digital Marketing</a><i class="fa fa-angle-right" aria-hidden="true"></i>  
+                                                                                             <div class="sub-menu-2">
+                                                                                                <ul class="sub-a-menu-3">
+                                                                                                    <li> <a href="#">Google SEO</a></li>   
+                                                                                                    <li class="hover-me"> <a href="#">Social Medya </a></i></li>                      
+                                                                                                    <li> <a href="#">Sales Strategy</a> </li>                      
+                                                                                                </ul>
+                                                                                            </div> 
+                                                                                         </li> 
+                                                                                        <li class="hover-me"> <a href="#">Mobile App</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                                                                                            <div class="sub-menu-2">
+                                                                                                <ul>
+                                                                                                    <li> <a href="#">Android App</a> </li>   
+                                                                                                    <li> <a href="#">IOS App</a> </li> 
+                                                                                                    <li> <a href="#">Ionic App</a> </li>  
+                                                                                                    <li> <a href="#">Flutter App</a> </li>                    
+                                                                                                </ul>
+                                                                                            </div>  
+                                                                                        
+                                                                                        </li>              
+                                                                                    </ul>
+                                                                            </div>
+                        </li>
+                       
+                        <li><a href="#" ><i class="fa fa-users" aria-hidden="true"> </i> Clients</a></li>
+                        <li><a href="#" ><i class="fa fa-credit-card" aria-hidden="true"></i> Pricing</a></li>
+                        <li><a href="#" ><i class="fa fa-university" aria-hidden="true"> </i> Training</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                <li> <a href="#">Digital Strategy</a> </li>   
+                                <li> <a href="#">Development</a> </li> 
+                                <li> <a href="#">Cyber Security</a> </li>                      
+                                </ul>
+                            </div>
+
+                        
+                        </li>
+                        <li><a href="#" ><i class="fa fa-phone" aria-hidden="true"> </i> Contact</a></li>
+                    </ul>
+         </div>
+         
+    </div>
+
+
+</body>
+</html>
